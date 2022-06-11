@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Strait";
+  src: url("./fonts/Strait-Regular.ttf");
+}
+@font-face {
+  font-family: "SpaceMono Regular";
+  src: url("./fonts/SpaceMono-Regular.ttf");
+}
+
+* {
+  font-family: "Strait";
+}
+.header-principal h1 {
+  font-size: 5rem;
+}
+.header-principal p {
+  font-size: 1.2rem;
+}
+.descripcion {
+  font-family: "SpaceMono Regular";
+}
+
+img {
+  max-height: 750px;
+}
+.img-modal {
+  width: 100%;
+  height: 100%;
+}
+
+.cerrar {
+  width: 30px;
+}
+.close {
+  color: white !important;
+  opacity: 1;
+  font-size: 40px !important;
+}
+.modal-header {
+  border: none !important;
+  background: #000 !important;
+}
+
+.deco {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#ffd33d),
+    color-stop(17%, #ea4aaa),
+    color-stop(34%, #b34bff),
+    color-stop(51%, #01feff),
+    color-stop(68%, #ffd33d),
+    color-stop(85%, #ea4aaa),
+    to(#b34bff)
+  );
+  background: linear-gradient(
+    90deg,
+    #ffd33d,
+    #ea4aaa 17%,
+    #b34bff 34%,
+    #01feff 51%,
+    #ffd33d 68%,
+    #ea4aaa 85%,
+    #b34bff
+  );
+  top: 0px;
+  left: 0px;
+  background-size: 300% 100%;
+  -webkit-animation: animacion-arcoiris 2s linear infinite;
+  animation: animacion-arcoiris 2s linear infinite;
+}
+@keyframes animacion-arcoiris {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
